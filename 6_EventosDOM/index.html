@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evantos DOM</title>
+    <style>
+
+        #Principal{ 
+            background-color: green;
+            text-align: center;
+            padding: 100px;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="Principal" onclick="clicar()" onmouseenter="entrou()" onmouseleave="saiu()" onmousemove="moveu()">
+        Essa é a minha DIV
+    </div>
+
+    <script>
+
+        function teste(){
+            return Principal.style.background 
+        }
+
+        function clicar(){
+            Principal.style.background = 'blue'
+            Principal.innerText = 'clicou'
+            Principal.style.color = 'white'
+        }
+
+        function entrou(){
+            Principal.style.background = 'yellow'
+            Principal.innerText = 'entrou'
+            Principal.style.color = 'red'
+        }
+
+        function saiu(){
+            Principal.style.background = 'green'
+            Principal.innerText = 'Essa é a minha DIV'
+            Principal.style.color = 'black'
+        }
+       
+        function moveu(){
+            let x = teste()
+            if (x == 'blue'){
+            Principal.style.background = 'black'
+            Principal.innerText = 'Moveu'
+            Principal.style.color = 'red'
+        }
+        }
+
+
+    </script>
+
+</body>
+</html>
