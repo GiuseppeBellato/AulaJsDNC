@@ -28,13 +28,13 @@
 
         function clicar(){
             Principal.style.background = 'blue'
-            Principal.innerText = 'clicou'
+            Principal.innerText = 'Clicou'
             Principal.style.color = 'white'
         }
 
         function entrou(){
             Principal.style.background = 'yellow'
-            Principal.innerText = 'entrou'
+            Principal.innerText = 'Entrou'
             Principal.style.color = 'red'
         }
 
@@ -45,8 +45,7 @@
         }
        
         function moveu(){
-            let x = teste()
-            if (x == 'blue'){
+            if (teste() == 'blue'){
             Principal.style.background = 'black'
             Principal.innerText = 'Moveu'
             Principal.style.color = 'red'
